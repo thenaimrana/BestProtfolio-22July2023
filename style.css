@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:black;
+    scroll-behavior:smooth;
+}
+html{
+    scroll-behavior:smooth;
+}
+.list_item li a b{
+    color: white;
+    position: relative;
+    
+}
+.list_item li a b::after{
+    content: "";
+    position:absolute ;
+    width: 00px;
+    height: 3px;
+    background-color: orangered;
+    right:5px;
+    bottom:20px;
+}
+.list_item li a b:hover::after{
+    width: 40px;
+    transition: all 0.3s ease-in-out 0s;
+    transition: width 0.5s;
+}
+.left_home{
+    font-weight: bold;
+}
+.left_home h5{
+    font-weight: 900;
+}
+.left_home h1{
+    font-weight: 900;
+}
+.About_heading h1{
+    text-shadow: 40px 40px 5px;
+}
+
+.About_list li{
+    list-style: none;
+    line-height: 40px;
+    font-size: 18px;
+}
+.all_icons span i:hover{
+    color: red;
+}
+
+
+.Project{
+    position: relative;
+    height: 300px;
+    overflow: scroll;
+}
+.all_icons i{
+    cursor: pointer;
+}
+.all_icons i:hover{
+    color: red;
+    font-size: 20px;
+}
+.new_top_meno{
+    position: relative;
+    position: fixed;
+    width: 100%;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    border-bottom: 1px solid rgb(41, 40, 40);
+}
+.Heading h1,h2{
+    line-height:0px;
+
+}
+.Heading h2{
+    opacity: 0.1;
+}
+.Resume_section{
+    
+} 

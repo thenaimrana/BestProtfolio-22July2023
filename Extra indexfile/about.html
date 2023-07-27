@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+          <!-- boostrap css cdn -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+          <!-- fontawesome cdn -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+</style>
+<body>
+    <!-- About section start -->
+    <div class="About_section bg-dark py-5 mt-lg-5 mt-0">
+        <div class="row">
+          <div class="col-md-5 ">
+            <img src="../img/about.jpeg" alt="" class="w-100 h-100">
+          </div>
+
+          <div class="col-md-7 text-white">
+            <div class="About_heading  text-white p-3">
+              <h1 class="display-4 text-white pb-2" style="font-weight: bold;">About Me</h1>
+              <h5 class="w-75 mt-5 pb-3" style="color: #565656;">Professinal Designer & Front-end Development </h5>
+            </div>
+            <div class="About_identity">
+              <ul class="About_list">
+                <li>Name : <span style="color: #565656;">   Md Naim Rana</span></li>
+                <li>Date of Birth :  <span style="color: #565656;"> 21 December 2003</span></li>
+                <li>Address : <span style="color: #565656;"> Jamalpur Sadar, Dhaka Bangladesh</span></li>
+                <li>Email : <span style="color: #565656;">mdnaimrana5@gmail.com</span> </li>
+                <li>Phone : <span style="color: #565656;">01908867200</span> </li>
+                <h3 class="pt-3"><span id="Counting1" style="color: #FFDB39;">0</span> Project Complete</h3>
+                <a href="https://docs.google.com/document/d/1xIQcDaYQxoL_CCcYEOaozlbjvzhC3Cj4/edit" target="_parent" class="btn btn-md mt-4 rounded-pill" style="background-color: #FFDB39;" > Download CV</a>
+                <a href="http://127.0.0.1:5500/Extra%20indexfile/hire.html" target="_parent" class="btn btn-md mt-4 rounded-pill" style="background-color: #FFDB39;" > HIRE ME</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About section end -->
+            <!-- boostrap js cdn -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <!-- external js cdn -->
+            <script src="script.js"></script>
+
+            <script>
+                let Counting1 = document.querySelector("#Counting1");
+let COUNT=0;
+let setCount = setInterval(naim,200);
+function naim (){
+    COUNT++;
+    Counting1.innerHTML=COUNT;
+    if(COUNT==120){
+        clearInterval(setCount)
+    }
+
+}
+
+            </script>
+</body>
+</html>

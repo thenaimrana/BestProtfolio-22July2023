@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQury Practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- boostrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+
+<body>
+ <div class="container " id="Naim">
+    <div class="Login_box p-5 bg-info text-center mt-5 rounded mx-5 d-inline-block m-auto ">
+        <h1 class="text-white p-3">Your Information</h1>
+        <input class="px-4 py-2 rounded" type="text" name="" placeholder="Enter your name" id=""><br><br>
+        <input class="px-4 py-2 rounded" type="email" name="" placeholder="Enter your email" id=""><br><br>
+        <input class="px-4 py-2 rounded" type="password" name=""  id="pass1" placeholder="Enter Your Password" ><br>
+        <input type="checkbox" name="" id="show1"> <span class="text-white">Show Password</span> <br>
+        <input class="px-4 py-2 rounded" type="password" name=""  id="pass2" placeholder="Enter Your RePassword"><br>
+        <input type="checkbox" name="" id="show2">  <span class="text-white">Show Password</span> <br><br>
+        <input class="btn btn-success px-3" type="button" id="LoginButton" value="login">
+    </div>
+ </div>
+
+ <div id="heading" class="heading" style="display: none; " >
+    <h1 class="text-success text-center mt-5  display-1">Thank You</h1>
+ </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+     <!-- boostrap js cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <!-- external js cdn -->
+
+
+     
+    <script>
+        let pass1 = document.querySelector("#pass1");
+        let pass2 = document.querySelector("#pass2");
+        let show1 = document.querySelector("#show1");
+        let show2 = document.querySelector("#show2");
+        let LoginButton = document.querySelector("#LoginButton");
+        let Naim = document.querySelector("#Naim");
+        let heading = document.querySelector("#heading");
+
+
+
+        $('#LoginButton').click(function() {
+        let Password1 = pass1.value;
+        let Password2 = pass2.value;
+
+        if( Password1 != '' && Password2 != ""){
+
+            if(Password1==Password2){
+            alert('Login Successful')
+            }else{
+                alert('password missmatch')
+            }
+        }
+        else{
+            alert('pleace entert password')
+        }
+        })
+
+        // password show & hide
+
+        show1.onclick = ()=>{
+            if(pass1.type == 'password'){
+                pass1.type="text"
+            }else{
+                pass1.type='password'
+            }
+        }
+        show2.onclick = ()=>{
+            if(pass2.type == 'password'){
+                pass2.type="text"
+            }else{
+                pass2.type='password'
+            }
+        }
+
+        // login btn heandelar
+        LoginButton.addEventListener("click",()=>{
+            Naim.style.display="none"
+            heading.style.display="block"
+        })
+    </script>
+</body>
+</html>
