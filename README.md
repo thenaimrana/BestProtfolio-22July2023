@@ -1,2 +1,3 @@
 My Standard Protfolio
-View Profile Link:
+View Netlify Profile Link:
+https://zesty-pixie-aa803b.netlify.app
